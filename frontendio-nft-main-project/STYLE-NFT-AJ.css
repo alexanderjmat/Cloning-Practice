@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    z-index: 0;
+
+}
+
+/* When resizing, change as few properties as possible */
+
+ body {
+    width: 375px;
+    box-sizing: border-box;
+    background-color: hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+.main {
+    width: 300px;
+    height: 480px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 5%;
+    position: relative;
+    margin: 80px;
+    border-radius: 15px;
+    font-size: 16px;
+    align-content: center;
+
+}
+
+.pic, .overlay {
+    display: inline-block;
+    width: 260px;
+    height: 250px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.logo {
+    display: none;
+    position: absolute;
+    top: 6.5em;
+    right: 6.5em;
+}
+
+.pic:hover .logo {
+    display: inline-block
+}
+
+.pic:hover::after {
+    content: "\A";
+    background: hsl(178, 100%, 50%);
+    opacity: 40%;
+    width: 16.3em;
+    height: 15.7em;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 1;
+    
+}
+
+.head h1 {
+    color: white;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 2.5em;
+
+
+}
+
+.head h1:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+
+}
+
+
+.desc {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    line-height: 1.5em;
+
+}
+
+.eth {
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+    display: inline;
+
+}
+
+.timeline {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    display: inline;
+    line-height: 2em;
+    margin-top: 6px;
+    display: inline-block;
+    padding-left: 78px;
+
+
+} 
+
+
+ .hr {
+    border: 0.01em solid hsl(215, 32%, 27%); /*Use HEX because it's operating system */
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+} 
+
+.citation {
+    display: inline-block;
+    font-weight: 300;
+}
+
+.citation-1 {
+    color: hsl(215, 51%, 70%);
+    display: inline-block;
+    
+}
+
+.citation-1 img {
+    border: 1px solid white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+    margin-right: 1em;
+}
+
+.citation-2 {
+    color: white;
+    position: relative;
+    display: inline-block;
+}
+
+.jules:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.citation-1 p, .citation-2 p {
+    display: inline-block;
+    position: relative;
+    bottom: 8px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}  
+
+
+
+
+
+ 
+
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Soft blue: hsl(215, 51%, 70%)
+- Cyan: hsl(178, 100%, 50%)
+
+### Neutral
+
+- Very dark blue (main BG): hsl(217, 54%, 11%)
+- Very dark blue (card BG): hsl(216, 50%, 16%)
+- Very dark blue (line): hsl(215, 32%, 27%)
+- White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraph): 18px
+
+### Font
+
+- Family: [Outfit](https://fonts.google.com/specimen/Outfit)
+- Weights: 300, 400, 600  */
